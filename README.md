@@ -2,8 +2,8 @@
 
 to install plugins
 
-> > npm i
+> npm i
 
 to run the project
 
-> > npm run serve
+> npm run serve
