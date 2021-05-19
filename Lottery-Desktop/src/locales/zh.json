@@ -1,0 +1,15 @@
+{
+  "message": "hello zh-i18n !!",
+  "en": "English",
+  "zh": "中文",
+  "memberAcc": "会员账号",
+  "memberName": "会员名称",
+  "ownedHandicap": "所属盘口",
+  "accStat": "账户状态",
+  "quickDrawAmnt": "快开彩额度",
+  "memberProfile": "会员资料",
+  "chooseDisplayColor": "选择显示彩种",
+  "noteDragColor": "注：可拖动彩种位置来改变彩种排序。",
+  "determine": "确定",
+  "cancel": "取消"
+}

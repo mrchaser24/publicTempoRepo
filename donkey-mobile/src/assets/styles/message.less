@@ -1,0 +1,51 @@
+.message {
+  height: 100%;
+  overflow: hidden;
+
+  ::v-deep .nav .nav-wrapper .left {
+    width: 20%;
+    padding-right: 0px;
+  }
+
+  .content-wrapper {
+    padding: 10px;
+    display: block;
+
+    span {
+      display: block;
+    }
+
+    .title {
+      font-size: 16px;
+      color: #464646;
+      margin-bottom: 5px;
+    }
+
+    .date {
+      font-size: 12px;
+      color: #b6b6b6;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      font-size: 13px;
+      line-height: 15px;
+      color: #464646;
+    }
+
+  }
+}
+
+.theme-color-night {
+  .message .content-wrapper .title {
+    color: #989898;
+  }
+
+  .message .content-wrapper .date {
+    color: #575757;
+  }
+
+  .message .content-wrapper .message {
+    color: #989898;
+  }
+}

@@ -1,0 +1,207 @@
+.nav {
+  height: @nav-H;
+  line-height: @nav-H;
+  background: @white;
+  
+  .nav-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .nav-wrapper .left {
+    padding: 0px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 15%;
+
+    .user-icon {
+      box-shadow: 0px 0px 5px 0px rgba(144,94,249,0.75);
+      background-image: url(../../icons/my_profilephotobg.png);
+      background-size: contain;
+      border-radius: 50%;
+      width: 35px;
+      height: 34px;
+      min-width: 35px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        height: 34px;
+        width: 35px;
+        object-fit: cover;
+      }
+
+    }
+
+    .back-icon {
+      height: 100%;
+      display: flex;
+      justify-self: start;
+      align-items: center;
+    }
+
+  }
+
+  .nav-wrapper .center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+
+    .is-text {
+      font-size: 18px;
+      color: @seconday-text-color-1;
+    }
+
+    .is-input {
+      width: 100%;
+    }
+
+    .is-input .van-search {
+      padding: 0px 0px 0px 5px;
+      background: transparent;
+      ::v-deep .van-cell {
+        padding: 5px 8px 5px 0;
+        height: 26px;
+        line-height: 16px;
+      }
+
+      ::v-deep .van-field__control {
+        color: @primary-text-color;
+      }
+
+      ::placeholder {
+        color: #bbbbbf;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: #bbbbbf;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+       color: #bbbbbf;
+      }
+
+    }
+
+    .is-input .van-search .van-search__content {
+      background: #ebebec;
+    }
+
+  }
+
+  .nav-wrapper .right {
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    height: 100%;
+    width: 20%;
+    justify-content: flex-end;
+    
+    .right-text {
+      font-size: 15px;
+      color: @seconday-text-color-1;
+    }
+
+    & > div:first-child {
+      margin-right: 5px;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+
+
+    .theme-icon {
+      position: relative;
+      // margin-right: 10px;
+    }
+
+    .theme-icon.day::after {
+      content: "";
+      height: 5px;
+      width: 5px;
+      border-radius: 15px;
+      background: #ff3e3e;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    & > div.dropdown {
+      margin-right: 0px;
+      
+      ::v-deep .van-dropdown-item--down {
+        top: 47px !important;
+      }
+      ::v-deep .van-dropdown-menu__bar {
+        background: transparent;
+        box-shadow: none;
+      }
+
+      ::v-deep .van-dropdown-menu__bar .van-dropdown-menu__title {
+        color: @seconday-text-color-1;
+        padding: 0px;
+        text-align: left;
+      }
+    
+      ::v-deep .van-dropdown-menu__bar .van-dropdown-menu__title::after {
+        content: none;
+      }
+
+      ::v-deep .van-dropdown-item__content {
+        background: @white;
+        padding: 15px 0px;
+      }
+      
+      ::v-deep .van-grid-item {
+        height: 28px;
+        line-height: 28px;
+      }
+
+     
+
+      ::v-deep .van-grid-item .van-grid-item__content{
+        background-color: transparent;
+        border: solid 1px #c5c5c5;
+        border-radius: 3px;
+        padding: 0px;
+        color: #c6c6c6;
+        font-size: 12px;
+      }
+      ::v-deep .van-grid-item.active .van-grid-item__content{
+        border: 1px solid #905ef9;
+        color: #905ef9;
+      }
+      ::v-deep .van-grid-item__content::after,
+      ::v-deep .van-grid-item__content::before {
+        content: none;
+      }
+  
+    }
+
+  }
+
+}
+
+.theme-color-night .nav {
+  background:  #1a191c;
+
+  .center .is-input ::v-deep .van-search .van-search__content {
+    background: #ebebec;
+  }
+
+  .right > div.dropdown ::v-deep .van-dropdown-item__content {
+    background: @primary-content-bg-color;
+  }
+
+  .right .delete-icon {
+    color: #616163;
+  }
+
+}

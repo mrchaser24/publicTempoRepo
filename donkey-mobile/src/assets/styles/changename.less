@@ -1,0 +1,81 @@
+.change-name {
+
+  ::v-deep .nav .nav-wrapper .right > div:first-child {
+    margin-right: 0px;
+  }
+
+  .content {
+
+    .title {
+      background: #f6f5fa;
+      padding: 0px 10px 5px;
+      position: relative;
+      display: flex;
+      color: #7f7f7f;
+      font-size: 14px;
+    }
+
+    .asterisk {
+      padding: 0px 3px;
+      color: red;
+    }
+
+    ::v-deep .van-field__value {
+      display: flex;
+      align-items: center;
+    }
+
+    ::v-deep .van-field__body {
+      flex: 3;
+    }
+
+    ::v-deep .van-field__word-limit {
+      margin-top: 0px;
+      color: #b4b4b4;
+    }
+
+    .link_user span{
+      font-size: 12px;
+      color: #b4b4b4;
+    }
+
+    .rule-note {
+      color: #464646;
+      font-size: 12px;
+      padding: 0px 10px;
+    }
+
+  }
+  .van-hairline--top-bottom::after,
+  .van-hairline-unset--top-bottom::after {
+    content: none;
+  }
+}
+
+.theme-color-night .change-name  {
+
+  .title {
+    background: #232226;
+  }
+
+  ::v-deep .van-cell {
+    background: #1a191c;
+  }
+
+  ::placeholder {
+    color: #a6a6a6;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #a6a6a6;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #a6a6a6;
+  }
+  .rule-note {
+    color: #7f7f7f;
+  }
+
+}

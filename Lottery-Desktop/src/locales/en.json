@@ -1,0 +1,15 @@
+{
+  "message": "hello en-i18n !!",
+  "en": "English",
+  "zh": "Chinese",
+  "memberAcc": "Member account",
+  "memberName": "Member name",
+  "ownedHandicap": "Owned Handicap",
+  "accStat": "Account Status",
+  "quickDrawAmnt": "Quick draw amount",
+  "memberProfile": "Member profile",
+  "chooseDisplayColor": "Choose display color",
+  "noteDragColor": "Note: You can drag the color position to change the color sort.",
+  "determine": "determine",
+  "cancel": "cancel"
+}

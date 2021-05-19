@@ -1,0 +1,122 @@
+.select-avatar {
+  height: 100%;
+  overflow: hidden;
+
+  ::v-deep .nav .nav-wrapper .left {
+    width: 20%;
+    padding-right: 0px;
+  }
+
+  ::v-deep .nav .nav-wrapper .right > div:first-child {
+    margin-right: 0px;
+  }
+
+  .content {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .content .content-wrapper {
+    padding-top: 10px;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 50px;
+
+    .image-block {
+      background: #fff;
+      
+      &:first-child {
+        margin-bottom: 10px;
+      }
+
+      .title-block {
+        background: transparent;
+        margin-bottom: 5px;
+  
+        &::after {
+          display: none;
+        }
+      }
+      
+      .title-block .van-cell {
+        height: 32px;
+        line-height: 16px;
+        padding: 8px 15px;
+        background: url('./../icons/titlebg_day.png');
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 37px 60%;
+      }
+
+      .title-block .van-cell__title span {
+        background: @linear-text-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      .image-list {
+        padding: 0px 0px 10px;
+      }
+      
+      .image-list ::v-deep .van-grid-item {
+        justify-content: center;
+        display: flex;
+        height: 46px;
+        width: 46px;
+      }
+
+      .image-list ::v-deep .van-grid-item.selected .van-grid-item__content {
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px 0px rgba(144,94,249,0.75);
+        background-image: url(../icons/my_profilephotobg.png);
+        background-size: contain;
+        border-radius: 50%;
+        position: relative;
+        .icon-check {
+          background-image: linear-gradient(0deg, #6a6af6 0%, #d649ff 100%), 
+          linear-gradient(#1a191c, #1a191c);
+          background-blend-mode: normal, normal;
+          position: absolute;
+          top: 1px;
+          right: 0;
+          border-radius: 50%;
+        }
+      }
+
+      ::v-deep .image-list .van-grid-item__content {
+        background: transparent;
+        padding: 0px;
+        height: 46px;
+        width: 46px;
+        min-height: 46px;
+        min-width: 46px;
+        &::after {
+          display: none;
+        }
+
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      
+    }
+
+  }
+
+}
+
+.theme-color-night .select-avatar {
+
+  .image-block {
+    background: @primary-bg-color-dark !important;
+  }
+
+  .image-block .title-block .van-cell {
+    background: url('./../icons/titlebg_night.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 37px 60%;
+  }
+
+}

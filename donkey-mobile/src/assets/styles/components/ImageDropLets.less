@@ -1,0 +1,49 @@
+.image-drop-lets {
+
+  ::v-deep .van-grid-item {
+    // height: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+
+  ::v-deep .van-grid-item .van-grid-item__content {
+    border-radius: 6px;
+    padding: 0px;
+  
+    &::after {
+      display: none;
+    }
+
+    .van-image {
+      border-radius: 6px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .van-image img {
+      border-radius: 6px;
+    }
+
+    img {
+      border-radius: 6px;
+      height: 140px;
+      width: 100%;
+    }
+    .title{
+     margin-top: 5px;
+     font-size: 1rem;
+      width: 9rem;
+      text-decoration: none; /* 去除默认的下划线 */
+      outline: none;	/* 去除旧版浏览器的点击后的外虚线框 */
+      color: #000;	/* 去除默认的颜色和点击后变化的颜色 */ 
+      
+      overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+    }
+  }
+
+}
+
+

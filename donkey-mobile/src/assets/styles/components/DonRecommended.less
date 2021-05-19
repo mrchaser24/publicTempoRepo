@@ -1,0 +1,114 @@
+.don-recommended {
+  background: transparent;
+  height: calc(100vh - 127px);
+  overflow-y: scroll;
+
+  .notice {
+    margin: 0px;
+    padding-top: 7px;
+
+    ::v-deep .van-notice-bar {
+      height: 30px;
+      line-height: 30px;
+      color: @primary-text-color-2;
+      background-color: transparent;
+      font-size: 12px;
+      padding: 0px 10px;
+
+      .notice-icon {
+        background-image: url(./../../icons/announcement.png);
+        background-size: cover;
+        height: 30px;
+        position: absolute;
+        z-index: 2;
+        width: 110px;
+        top: -5px;
+      }
+
+      .van-notice-bar__wrap {
+        margin-left: 86px;
+      }
+
+    }
+
+  }
+
+  ::v-deep .swipe-image {
+    padding: 0px 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+
+    .van-swipe__track {
+      border-radius: 6px;
+    }
+
+    .van-swipe {
+      border-radius: 6px;
+    }
+
+    .van-swipe-item {
+      height: 150px;
+      border-radius: 6px;
+
+
+    }
+
+    .van-swipe-item .van-image {
+      border-radius: 6px;
+    }
+
+    .van-swipe-item img {
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+  }
+
+  .van-pull-refresh {
+    height: 100%;
+  }
+  
+  .image-block {
+
+    .title-block {
+      background: transparent;
+      margin-bottom: 5px;
+
+      &::after {
+        display: none;
+      }
+    }
+    
+    .title-block ::v-deep .van-cell {
+      background: transparent;
+      height: 32px;
+      line-height: 16px;
+      padding: 8px 10px;
+      background: url('./../../icons/titlebg_day.png');
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 57px auto;
+    }
+
+    .title-block ::v-deep .van-cell__title span {
+      background: @linear-text-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+
+}
+
+
+.theme-color-night .don-recommended { 
+
+  .image-block .title-block ::v-deep .van-cell {
+    background: url('./../../icons/titlebg_night.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 57px auto;
+  }
+
+}

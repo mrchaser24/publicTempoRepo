@@ -1,0 +1,38 @@
+.footer {
+  background-color: @white;
+  ::v-deep .van-tabbar {
+    background: transparent;
+    box-shadow: 0px 0px 4px 0px rgba(90, 114, 132, 0.3);
+    height: @footer-H;
+    line-height: @footer-H;
+  }
+
+  ::v-deep .van-tabbar-item {
+    background: transparent;
+    background: @white;
+  }
+
+  ::v-deep .van-tabbar-item .van-tabbar-item__text{
+    // background: -webkit-linear-gradient(rgb(166,106,255), rgb(244,66,255));
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+  ::v-deep .van-tabbar-item--active .van-tabbar-item__text{
+    background: -webkit-linear-gradient(rgb(166,106,255), rgb(244,66,255)) !important;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent!important;
+  }
+}
+
+.theme-color-night .footer {
+  ::v-deep .van-tabbar-item {
+    background: @primary-bg-color-dark;
+
+    .van-tabbar {
+      background: transparent;
+      box-shadow: 0px 0px 8px 0px rgba(90, 114, 132, 0.3);
+    }
+
+  }
+
+}

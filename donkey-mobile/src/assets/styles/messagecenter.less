@@ -1,0 +1,115 @@
+.message-center {
+  height: 100%;
+  overflow: hidden;
+
+  ::v-deep .nav .nav-wrapper .left {
+    width: 20%;
+    padding-right: 0px;
+  }
+
+  .van-tabs__wrap {
+    height: 30px;
+    padding: 0px 30px;
+  }
+
+  .content,
+  .content-wrapper {
+    height: 100%;
+  }
+
+  .content-wrap {
+    padding: 12px 10px 12px;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+
+    .top-label {
+      display: flex;
+    }
+    
+    .top-label .title {
+      text-align: left;
+      color: #828282;
+      font-size: 14px;
+      width: 67px;
+      min-width: 67px;
+    }
+    
+    .top-label .title.active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 3px;
+        top: 2px;
+        width: 4px;
+        height: 4px;
+        background: red;
+        border-radius: 50px;
+      }
+
+    }
+
+    .top-label .date {
+      width: 100%;
+      text-align: right;
+      color: #b6b6b6;
+      font-size: 12px;
+    }
+
+    .mes-type {
+      padding: 10px 0px;
+      font-size: 12px;
+      line-height: 12px;
+      color: #464646;
+    }
+
+    .message {
+      font-size: 12px;
+      color: #818181;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: auto;
+    }
+
+    .check-details-btn {
+      color: #71a0ff;
+      font-size: 12px;
+    }
+  }
+
+  .content-wrap:first-child {
+    margin-top: 10px;
+  }
+
+  .content-wrap .cont-left {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    width: 45px;
+    min-width: 45px;
+    margin-right: 10px;
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .content-wrap .cont-right {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .van-tab__pane-wrapper {
+    height: calc(100vh - 77px);
+    overflow-y: auto;
+  }
+}
+
+.theme-color-night {
+  .message-center .content-wrap {
+    background: transparent;
+    border-color: #1a191c;
+  }
+}

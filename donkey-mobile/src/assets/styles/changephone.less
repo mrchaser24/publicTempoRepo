@@ -1,0 +1,151 @@
+.change-phone {
+
+  ::v-deep .nav .nav-wrapper .left {
+    width: 20%;
+    padding-right: 0px;
+  }
+
+  .content {
+    padding-top: 10px;
+  }
+
+  .content {
+
+    ::v-deep .van-cell-group {
+      background: @white;
+      padding: 8px 0px 10px;
+    }
+
+    .link_user {
+
+      .title {
+        color: #464646;
+        padding: 0px 10px;
+        font-size: 12px;
+      }
+      
+      .code-title {
+        margin-top: 5px;
+      }
+
+      ::v-deep .van-cell {
+        padding: 0px 10px 5px;
+        background: transparent;
+        &::after {
+          right: 0;
+          left: 0;
+        }
+      }
+
+      ::v-deep .van-row {
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        .van-cell {
+          padding: 0px;
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      ::v-deep .van-button {
+        border-radius: 20px;
+        background: #6a6af6;
+        border: none;
+        height: 20px;
+        width: auto;
+        min-width: 76px;
+        margin-right: 0px !important;
+        span {
+          color: #fff;
+        }
+
+      }
+      
+    }
+
+    .btn-submit {
+      margin-top: 38px;
+      padding: 0px 10px;
+
+      ::v-deep .van-button {
+        border-radius: 20px;
+        background: #6a6af6;
+        border: none;
+      }
+
+    }
+
+  }
+
+  .prompt ::v-deep .dialog-box {
+    overflow: hidden;
+    box-shadow: none;
+    height: 22% !important;
+
+    .error-code-body {
+      font-size: 15px;
+    }
+
+    .error-code-footer {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .van-button {
+      height: 36px;
+      border: none;
+      background: #6a6af6;
+      width: 70%;
+    }
+
+  }
+
+}
+
+
+.theme-color-night .change-phone {
+
+  ::v-deep .van-cell-group {
+    background: @primary-bg-color-dark;
+    &::after {
+      content: none;
+    }
+  }
+
+  .link_user ::v-deep .van-cell::after {
+    border-color: #232226;
+  }
+
+  ::v-deep .van-field__control {
+    color: #9f9f9f;
+  }
+  
+  ::v-deep ::placeholder {
+    color: #a6a6a6;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #a6a6a6;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #a6a6a6;
+  }
+
+  .prompt ::v-deep .dialog-box {
+    background: @primary-bg-color-dark;
+    box-shadow: 0px 0px 5px 0px rgba(144, 94, 249, 0.75);
+  }
+  
+  ::v-deep .error-code-body {
+    color: #8c8c8c;
+  }
+
+  .btn-submit .van-button {
+    background: #6a6af6;
+  }
+}

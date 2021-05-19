@@ -1,0 +1,55 @@
+.feedback {
+  ::v-deep .nav .nav-wrapper .left {
+    width: 20%;
+    padding-right: 0px;
+  }
+  .content-wrapper {
+    text-align: center;
+  }
+  .message {
+    padding: 7px 9px;
+    margin-bottom: 25.5px;
+    background: transparent;
+
+    ::v-deep textarea {
+      height: 210px !important;
+      border: 1px solid #dedede;
+      background: @white;
+      padding: 9px 11px;
+      font-size: 13px;
+      color: #464646;
+    }
+
+    ::v-deep .van-cell__value {
+      position: relative;
+    }
+
+    ::v-deep .van-field__word-limit {
+      font-size: 13px;
+      color: #a6a6a6;
+      position: absolute;
+      bottom: 8px;
+      right: 9px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .fb-btn {
+    height: 39px;
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    background: #6a6af6;
+    border: none;
+  }
+}
+
+.theme-color-night .feedback {
+  ::v-deep textarea {
+    background: #303030;
+    border: 1px solid #606060;
+    color: #a6a6a6;
+  }
+} 
